@@ -1,0 +1,69 @@
+.do-page {
+  padding-top: $bar-height;
+  &.stretch {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: $base-bg-color;
+    @include flex-y();
+    position: absolute;
+    top: 0;
+    left: 0;
+    .do-wrapper {
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      flex: 1;
+      @include flex-y();
+    }
+  }
+  &.with-title {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: $base-bg-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include flex-y();
+    .do-wrapper {
+      box-sizing: border-box;
+      padding-bottom: var(--window-bottom);
+      background-color: $base-bg-color;
+      @include flex-y();
+    }
+  }
+}
+
+.do-line {
+  box-sizing: border-box;
+  padding: $base-gap / 2;
+  &.with-x-label {
+    @include flex-box(flex-start, center);
+    white-space: nowrap;
+  }
+}
+
+.do-form {
+  box-sizing: border-box;
+  padding: $base-gap / 2;
+}
+
+.do-label {
+  padding-right: $base-gap / 2;
+}
+
+.do-input {
+  box-sizing: border-box;
+  padding: $base-gap / 2;
+  border: 1rpx solid #333;
+  border-radius: 6rpx;
+}
+
+.yellowTheme {
+	background-color: #f9e6be;
+	color: #422e0d;
+	.themeBorder {
+		border-color: #422e0d ;
+	}
+}

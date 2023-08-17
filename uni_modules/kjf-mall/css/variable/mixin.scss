@@ -1,0 +1,24 @@
+// 通过scss的mixin功能，把原来需要写4行的css，变成一行
+// 目的是保持代码干净整洁，不至于在nvue下，到处都要写display:flex的条件编译
+@mixin flex-y() {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+@mixin flex-box($jc: center, $ai: center) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin ellipsis($lines: 1) {
+  text-overflow: -o-ellipsis-lastline;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  line-clamp: $lines;
+  -webkit-box-orient: vertical; // 盒子中内容竖直排列
+}

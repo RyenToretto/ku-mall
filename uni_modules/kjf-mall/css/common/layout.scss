@@ -1,0 +1,21 @@
+/* #ifdef H5 */
+.uni-body {
+	background-color: $uni-bg-color;
+  font-size: $base-font-size;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	uni-app {
+		max-width: 750px;
+		.uni-tabbar-bottom .uni-tabbar {
+			box-sizing: border-box;
+			width: 100%;
+			max-width: 750px;
+			right: unset;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
+/* #endif */

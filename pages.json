@@ -1,0 +1,87 @@
+{
+  "uniIdRouter": {},
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "忘了山铺",
+    "navigationBarBackgroundColor": "#f3f3f3",
+    "backgroundColor": "#f3f3f3"
+    // #ifdef H5
+    ,"rpxCalcMaxDeviceWidth": 750, // rpx 计算所支持的最大设备宽度，单位 px，默认值为 960
+    "rpxCalcBaseDeviceWidth": 750, // rpx 计算使用的基准设备宽度，设备实际宽度超出 rpx 计算所支持的最大设备宽度时将按基准宽度计算，单位 px，默认值为 375
+    "rpxCalcIncludeWidth": 750 // rpx 计算特殊处理的值，始终按实际的设备宽度计算，单位 rpx，默认值为 750
+    // #endif
+  },
+  "tabBar": {
+    "color": "#333", // 字体颜色
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#015ff9", // 选中的颜色
+    "borderStyle": "white",
+    "list": [ // 最少两个, 最多5个
+        {
+            "text": "商城",
+            "pagePath": "pages/mall/city",
+            "iconPath": "static/tabs/tab_mall_city.png",
+            "selectedIconPath": "static/tabs/tab_mall_city_active.png"
+        },
+        {
+            "text": "分类",
+            "pagePath": "pages/mall/cate",
+            "iconPath": "static/tabs/tab_cate.png",
+            "selectedIconPath": "static/tabs/tab_cate_active.png"
+        },
+        {
+            "text": "购物车",
+            "pagePath": "pages/mall/car",
+            "iconPath": "static/tabs/tab_mall_car.png",
+            "selectedIconPath": "static/tabs/tab_mall_car_active.png"
+        },
+        {
+            "text": "我的",
+            "pagePath": "pages/personal/center",
+            "iconPath": "static/tabs/tab_mine.png",
+            "selectedIconPath": "static/tabs/tab_mine_active.png"
+        }
+    ]
+  },
+  // pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+  "pages": [
+    {
+      "path": "pages/splush/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path" : "pages/mall/city",
+      "style": {
+        "navigationBarTitleText": "商城",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path" : "pages/mall/cate",
+      "style" :
+      {
+        "navigationBarTitleText": "分类",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path" : "pages/mall/car",
+      "style" :
+      {
+        "navigationBarTitleText": "购物车",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path" : "pages/personal/center",
+      "style" :
+      {
+        "navigationBarTitleText": "我的",
+        "navigationStyle": "custom"
+      }
+    }
+  ]
+}

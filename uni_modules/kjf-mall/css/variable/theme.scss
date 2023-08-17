@@ -1,0 +1,15 @@
+$main: #FFDB3C; // 主题色
+$aux-main: rgba($main,0.1); // 淡主色
+$inverse-main: #000000; // 与主色搭配的反色
+$gradual-main: linear-gradient(to right, #FFE046 , #FED22E); // 渐变主色
+$gradual-inverse-main: #000; // 与渐变主色搭配的反色
+
+$base-bg-color: #f8f8f8; // 背景色
+
+$base-border-color: #e0e0e0; // 边框颜色
+$light-border-color: #efefef; // 边框liangse
+$active-border-color: #FCA111; // 聚焦时的边线颜色
+
+$base-txt-color: #333333; // 文字主色
+$sec-title-color: #676767; // 副标题颜色
+$third-txt-color: #a7a7a7; // 浅色
